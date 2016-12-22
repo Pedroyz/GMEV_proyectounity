@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.SceneManagement;
 
 public class SSFPSPlayerManager : MonoBehaviour {
 
@@ -42,5 +43,8 @@ public class SSFPSPlayerManager : MonoBehaviour {
 		if (wasActive) {
 			ssPanelsManager.showInteractionPanel ();
 		}
+	}
+	public void LoadSceneByIndex(int sceneIndex){
+		SceneManager.LoadScene (sceneIndex);
 	}
 }

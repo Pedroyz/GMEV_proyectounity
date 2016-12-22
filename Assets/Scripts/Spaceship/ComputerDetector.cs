@@ -53,6 +53,7 @@ public class ComputerDetector : MonoBehaviour {
 		ssPanelsManager.hideInteractionPanel ();
 		fpsCamera.enabled = false;
 		pcCamera.enabled = true;
+		ssPanelsManager.showCursor ();
 	}
 	public void hidePCCamera(){
 		pcCamera.enabled = false;
@@ -62,6 +63,13 @@ public class ComputerDetector : MonoBehaviour {
 	}
 	public void travelToVenus(){
 		pcCamera.enabled = false;
+		ssFPSManager.LoadSceneByIndex (Globals.SCENE_VENUS);
+		//videoCamera.enabled = true;
+		//playVideo.playVideo ();
+	}
+	public void travelToIcenet(){
+		pcCamera.enabled = false;
+		ssFPSManager.LoadSceneByIndex (Globals.SCENE_ICENET);
 		//videoCamera.enabled = true;
 		//playVideo.playVideo ();
 	}

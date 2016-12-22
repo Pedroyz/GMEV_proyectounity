@@ -44,6 +44,8 @@ public class SSPanelsManager : MonoBehaviour {
 
 	public void showWardrobePanel(){
 		wardrobePanel.SetActive (true);
+		showCursor ();
+
 	}
 	public void hideWardrobePanel(){
 		wardrobePanel.SetActive (false);
@@ -51,6 +53,7 @@ public class SSPanelsManager : MonoBehaviour {
 
 	public void showPausePanel(){
 		pauseMenuPanel.SetActive (true);
+		showCursor ();
 	}
 	public void hidePausePanel(){
 		pauseMenuPanel.SetActive (false);
@@ -65,5 +68,9 @@ public class SSPanelsManager : MonoBehaviour {
 			Globals.setCurrentDress (Globals.DRESS_TYPE_INDOOR);
 			dressText.text = Globals.DRESS_TYPE_INDOOR;
 		}
+	}
+	public void showCursor(){
+		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
 	}
 }

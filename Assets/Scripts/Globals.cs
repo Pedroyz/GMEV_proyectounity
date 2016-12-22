@@ -6,6 +6,9 @@ public static class Globals{
 	public static readonly string DRESS_TYPE_INDOOR = "Ropa de interior";
 	public static readonly string DRESS_TYPE_OUTDOOR = "Traje espacial";
 
+	public static readonly int SCENE_VENUS = 3;
+	public static readonly int SCENE_ICENET = 0;
+
 	public static string current_dress = DRESS_TYPE_INDOOR;
 
 	public static GameObject interactionPanel;
