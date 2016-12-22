@@ -1,0 +1,9 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class SoundManager : MonoBehaviour {
+
+	public void musicSliderChanged(float value){
+		AudioListener.volume = value;
+	}
+}
